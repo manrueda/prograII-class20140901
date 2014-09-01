@@ -1,5 +1,7 @@
 package edu.davinci.modelo;
 
-public class Curso {
+import java.util.List;
 
+public class Curso {
+	
 }

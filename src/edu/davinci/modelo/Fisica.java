@@ -9,4 +9,8 @@ public class Fisica extends Persona {
 	public void setApellido(String pApellido) {
 		this.apellido = pApellido;
 	}
+	
+	public void accederWeb(){
+		
+	}
 }
