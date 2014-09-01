@@ -1,5 +1,9 @@
 package edu.davinci.modelo;
 
-public class Catalogo {
+import java.util.Date;
 
+public class Catalogo {
+	private int codigo;
+	private String nombre;
+	private Date pubDate;
 }

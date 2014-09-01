@@ -1,5 +1,10 @@
 package edu.davinci.modelo;
 
-public class Alumno extends Fisica{
+import java.util.Date;
 
+public class Alumno extends Fisica{
+	private int legajo;
+	private Date fechaIngresa;
+	private Boolean regular;
+	
 }

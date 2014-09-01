@@ -8,6 +8,8 @@ public class Instructor extends Fisica {
 	private int legajo;
 	private List<Curso> cursos = new ArrayList<Curso>();
 	private List<Comision> comisiones = new ArrayList<Comision>();
+	private Boolean disponible;
+	
 	
 	public void actualizarDatos(){
 		
