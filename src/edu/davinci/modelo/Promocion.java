@@ -1,5 +1,10 @@
 package edu.davinci.modelo;
 
-public class Promocion {
+import java.math.BigDecimal;
 
+public class Promocion {
+	private int codigo;
+	private String descripcion;
+	private BigDecimal descuento;
+	
 }
