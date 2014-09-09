@@ -69,6 +69,12 @@ public abstract class Persona {
 	public void setDocumentos(List<Documento> documentos) {
 		this.documentos = documentos;
 	}
+	
+	public void setDocumentos(Documento documento) {
+		if (this.documentos == null)
+			this.documentos = new ArrayList<Documento>();
+		this.documentos.add(documento);
+	}
 
 	//Methods
 	public boolean validarDocumento() {

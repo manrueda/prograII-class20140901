@@ -66,7 +66,7 @@ public class PersonaJuridica extends Persona {
 
 	@Override
 	public String toString() {
-		return "PersonaJuridica [razonSocial=" + razonSocial
+		return super.toString() + "PersonaJuridica [razonSocial=" + razonSocial
 				+ ", fechaCreacion=" + fechaCreacion + "]";
 	}
 

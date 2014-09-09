@@ -105,7 +105,7 @@ public abstract class PersonaFisica extends Persona {
 
 	@Override
 	public String toString() {
-		return "PersonaFisica [nombre=" + nombre + ", apellido=" + apellido
+		return super.toString() + "PersonaFisica [nombre=" + nombre + ", apellido=" + apellido
 				+ ", fechaDeNacimiento=" + fechaDeNacimiento + "]";
 	}
 

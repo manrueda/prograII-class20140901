@@ -5,12 +5,12 @@ import org.apache.commons.lang3.StringUtils;
 public class Documento {
 	
 	private TipoDocumento tipo;
-	private Integer numero;
+	private String numero;
 	/**
 	 * @param tipo
 	 * @param numero
 	 */
-	public Documento(TipoDocumento tipo, Integer numero) {
+	public Documento(TipoDocumento tipo, String numero) {
 		super();
 		this.tipo = tipo;
 		this.numero = numero;
@@ -21,10 +21,10 @@ public class Documento {
 	public void setTipo(TipoDocumento tipo) {
 		this.tipo = tipo;
 	}
-	public Integer getNumero() {
+	public String getNumero() {
 		return numero;
 	}
-	public void setNumero(Integer numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 	@Override
@@ -45,13 +45,13 @@ public class Documento {
 	
 	//Method
 	public boolean isCuitOrCuil(){
-		return (StringUtils.length(this.numero.toString()) == 11);
+		return (StringUtils.length(this.numero) == 11);
 	}
 	
 	public Integer getPrefijo(){
 		Integer result = null;
 		String prefijoStr = null;
-		prefijoStr = StringUtils.substring(this.numero.toString(), 1, 2);
+		prefijoStr = StringUtils.substring(this.numero, 1, 2);
 		result = Integer.parseInt(prefijoStr);
 		return result;
 	}
