@@ -1,18 +1,10 @@
 package edu.davinci.modelo;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Instructor extends Fisica {
-	
+public class Instructor extends PersonaFisica {
 	private int legajo;
-	private List<Curso> cursos = new ArrayList<Curso>();
-	private List<Comision> comisiones = new ArrayList<Comision>();
-	private Boolean disponible;
-	
-	
-	public void actualizarDatos(){
-		
-	}
-
-}
+	private List<Comision> comisiones;
+	private List<Curso> cursos;
+	private boolean disponible;
+ }
